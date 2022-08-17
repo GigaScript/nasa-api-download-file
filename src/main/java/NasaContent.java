@@ -5,8 +5,8 @@ public class NasaContent {
     private final String date;
     private final String explanation;
     private final String hdurl;
-    private final String media_type;
-    private final String service_version;
+    private final String mediaType;
+    private final String serviceVersion;
     private final String title;
     private final String url;
 
@@ -15,8 +15,8 @@ public class NasaContent {
             @JsonProperty("date") String date,
             @JsonProperty("explanation") String explanation,
             @JsonProperty("hdurl") String hdurl,
-            @JsonProperty("media_type") String media_type,
-            @JsonProperty("service_version") String service_version,
+            @JsonProperty("media_type") String mediaType,
+            @JsonProperty("service_version") String serviceVersion,
             @JsonProperty("title") String title,
             @JsonProperty("url") String url
     ) {
@@ -24,8 +24,8 @@ public class NasaContent {
         this.date = date;
         this.explanation = explanation;
         this.hdurl = hdurl;
-        this.media_type = media_type;
-        this.service_version = service_version;
+        this.mediaType = mediaType;
+        this.serviceVersion = serviceVersion;
         this.title = title;
         this.url = url;
     }
@@ -46,12 +46,12 @@ public class NasaContent {
         return hdurl;
     }
 
-    public String getMedia_type() {
-        return media_type;
+    public String getMediaType() {
+        return mediaType;
     }
 
-    public String getService_version() {
-        return service_version;
+    public String getServiceVersion() {
+        return serviceVersion;
     }
 
     public String getTitle() {
@@ -67,7 +67,7 @@ public class NasaContent {
         return "NasaContent" +
                 "\n " + title +
                 "\n " + explanation +
-                "\n " + media_type + " created " + date + " by " + copyright +
+                "\n " + mediaType + " created " + date + " by " + copyright +
                 "\n Downloading url" +
                 "\n High quality url: " + hdurl +
                 "\n Low quality url: " + url;
